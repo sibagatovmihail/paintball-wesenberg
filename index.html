@@ -1,0 +1,736 @@
+<!doctype html>
+<!--
+  Designentwurf „Farbfabrik Paintball – Paintpark Wesenberg“
+  Gestaltung und Code © 2026 Mykhailo Sibahatov. Alle Rechte vorbehalten.
+  Nur zur Ansicht. Kopieren, Veröffentlichen oder Weiterverwenden ohne schriftliche
+  Vereinbarung ist nicht gestattet. Siehe LICENSE.
+-->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Farbfabrik Wesenberg · Paintball auf 60.000 m² in der Seenplatte</title>
+  <meta name="description" content="Paintball in Wesenberg: 12 Spielfelder auf 60.000 m², Leihausrüstung, Einweisung und Kids-Paintball ab 10 Jahren. Für Geburtstage, Firmenevents, JGA und Turniere. Jetzt Termin anfragen.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Mykhailo Sibahatov">
+  <meta name="copyright" content="Designentwurf und Code © 2026 Mykhailo Sibahatov. Alle Rechte vorbehalten.">
+  <meta name="theme-color" content="#121311">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Farbfabrik Wesenberg · Paintball">
+  <meta property="og:description" content="12 Spielfelder auf 60.000 m². Ausrüstung leihen, Einweisung bekommen, losspielen.">
+  <meta property="og:image" content="assets/img/feld.webp">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css?v=5">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Farbfabrik Paintball – Paintpark Wesenberg",
+    "description": "Paintballpark mit 12 Spielfeldern auf 60.000 m², Leihausrüstung und Kids-Paintball ab 10 Jahren.",
+    "telephone": "+49 39832 269549",
+    "email": "hallo@paintball-wesenberg.de",
+    "url": "https://www.paintball-wesenberg.de/",
+    "image": "assets/img/luftbild.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Siedenheide 4",
+      "postalCode": "17255",
+      "addressLocality": "Wesenberg",
+      "addressCountry": "DE"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Farbfabrik-Paintpark-Wesenberg-107599714459157/",
+      "https://www.instagram.com/farbfabrikwesenberg.paintball/"
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+<!-- icon + splat sprite -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 005.3 5.3l1.4-2.2L19 14.5V18a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M15.5 5.2a3 3 0 010 5.6M17.5 14.8c1.8.6 3 2.2 3.4 4.7"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 1.5v5M12 17.5v5M1.5 12h5M17.5 12h5"/></symbol>
+  <symbol id="i-mask" viewBox="0 0 24 24"><path d="M4 9.5C4 6 7.5 4 12 4s8 2 8 5.5c0 2.2-.6 4-1.6 5.2L16 17.5H8l-2.4-2.8C4.6 13.5 4 11.7 4 9.5z"/><path d="M6.5 9.5h11M9.5 17.5v2.5h5v-2.5"/></symbol>
+  <symbol id="i-shower" viewBox="0 0 24 24"><path d="M5 20V7a3 3 0 016 0v.5"/><path d="M7.5 9.5h7a3.5 3.5 0 00-7 0z"/><path d="M9 13v1M12 13v1.5M15 13v1M10.5 16.5v1M13.5 16.5v1"/></symbol>
+  <symbol id="i-burger" viewBox="0 0 24 24"><path d="M4.5 10.5C4.5 7 7.8 5 12 5s7.5 2 7.5 5.5z"/><path d="M4 13.5h16M5 17h14a0 0 0 010 0 2 2 0 01-2 2H7a2 2 0 01-2-2z"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.9 3.3-6 4.3-10.3 2.8 1.8 4.4 4.3 4.4 6.8 1-.6 1.7-1.7 2-2.9 1.5 1.6 2.3 3.8 2.3 6.2 0 3.7-2.6 6.4-6.5 6.4z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 018 0v2.5"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5v8h14v-8M12 8.5v12"/><path d="M12 8.5C10 8.5 7.5 7.8 7.5 6a1.8 1.8 0 013.2-1.1L12 8.5l1.3-3.6A1.8 1.8 0 0116.5 6c0 1.8-2.5 2.5-4.5 2.5z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 21v-8h2.8l.5-3.3H14V7.8c0-.9.4-1.8 1.8-1.8h1.6V3.2S16 3 14.9 3C12.4 3 10.8 4.5 10.8 7.3v2.4H8V13h2.8v8"/></symbol>
+  <symbol id="splat-1" viewBox="-110 -110 220 220"><path d="M59.6 0.0C63.1 1.3 69.0 3.1 70.2 4.6C71.4 6.1 69.1 7.7 66.9 8.8C64.7 9.9 58.8 10.3 56.8 11.3C54.9 12.3 54.5 13.2 55.1 14.8C55.7 16.3 58.9 18.6 60.2 20.4C61.4 22.3 63.1 24.6 62.6 25.9C62.0 27.2 59.5 27.9 56.9 28.1C54.2 28.2 49.7 27.3 46.6 26.9C43.5 26.5 40.3 25.7 38.3 25.6C36.2 25.5 35.0 25.6 34.3 26.3C33.5 27.0 33.6 28.1 33.8 29.6C34.0 31.2 34.9 33.3 35.7 35.7C36.4 38.0 37.7 41.1 38.3 43.7C38.9 46.2 39.4 49.2 39.1 51.0C38.8 52.8 37.8 54.1 36.5 54.6C35.1 55.1 33.0 54.4 31.1 53.8C29.2 53.2 27.0 51.8 25.1 51.0C23.3 50.2 21.7 49.2 20.3 48.9C18.9 48.6 17.7 48.3 16.8 49.3C15.8 50.4 15.2 51.7 14.8 55.2C14.3 58.6 14.5 64.6 14.0 70.2C13.4 75.8 13.0 85.0 11.7 88.7C10.4 92.3 8.0 94.2 6.0 92.1C4.1 90.0 1.6 81.6 0.0 76.0C-1.6 70.5 -2.7 62.7 -3.8 58.7C-5.0 54.7 -5.8 53.1 -6.9 52.1C-8.0 51.2 -9.2 52.4 -10.5 52.9C-11.9 53.5 -13.4 54.8 -14.8 55.3C-16.2 55.7 -17.7 56.1 -18.9 55.8C-20.1 55.4 -21.2 54.5 -22.1 53.3C-23.0 52.2 -23.6 50.5 -24.2 49.0C-24.8 47.5 -25.2 45.9 -25.6 44.4C-26.1 43.0 -26.5 41.6 -27.0 40.4C-27.4 39.1 -27.8 37.9 -28.2 36.8C-28.6 35.7 -29.0 34.6 -29.4 33.5C-29.7 32.4 -30.1 31.4 -30.4 30.4C-30.7 29.4 -31.0 28.4 -31.4 27.5C-31.7 26.6 -32.1 25.7 -32.5 24.9C-32.9 24.1 -33.4 23.4 -33.9 22.6C-34.4 21.9 -35.0 21.3 -35.6 20.6C-36.3 19.9 -37.0 19.3 -37.7 18.6C-38.4 17.9 -39.1 17.2 -39.8 16.5C-40.6 15.8 -41.3 15.0 -42.0 14.3C-42.7 13.5 -43.3 12.6 -43.9 11.8C-44.4 10.9 -44.9 10.0 -45.4 9.0C-45.9 8.1 -46.3 7.1 -47.0 6.2C-47.7 5.2 -48.4 4.3 -49.9 3.3C-51.3 2.2 -53.3 1.2 -55.5 0.0C-57.7 -1.2 -61.0 -2.7 -63.0 -4.1C-65.0 -5.6 -67.2 -7.4 -67.5 -8.9C-67.7 -10.3 -66.4 -11.8 -64.6 -12.8C-62.8 -13.9 -59.1 -14.5 -56.6 -15.2C-54.0 -15.8 -51.1 -16.1 -49.2 -16.7C-47.4 -17.3 -46.2 -17.9 -45.3 -18.8C-44.5 -19.6 -44.0 -20.5 -44.0 -21.7C-44.0 -22.9 -43.7 -23.8 -45.1 -26.0C-46.5 -28.2 -50.2 -31.9 -52.2 -34.9C-54.2 -37.9 -57.9 -42.7 -57.1 -43.8C-56.2 -44.9 -50.4 -42.4 -47.1 -41.3C-43.8 -40.2 -39.6 -37.9 -37.2 -37.2C-34.8 -36.6 -34.0 -37.1 -32.7 -37.3C-31.4 -37.4 -30.4 -37.9 -29.2 -38.1C-28.1 -38.3 -26.9 -38.4 -25.8 -38.6C-24.6 -38.7 -23.5 -38.8 -22.4 -38.9C-21.4 -39.0 -20.3 -39.0 -19.3 -39.2C-18.3 -39.3 -17.4 -39.4 -16.4 -39.6C-15.5 -39.9 -14.6 -40.1 -13.7 -40.4C-12.8 -40.7 -12.0 -41.1 -11.1 -41.4C-10.2 -41.8 -9.4 -42.2 -8.5 -42.6C-7.6 -42.9 -6.7 -43.4 -5.8 -43.7C-4.8 -44.0 -3.9 -44.3 -2.9 -44.6C-2.0 -44.8 -1.0 -45.0 -0.0 -45.0C1.0 -45.1 2.0 -45.1 2.9 -45.0C3.9 -44.8 4.9 -44.6 5.8 -44.4C6.8 -44.1 7.7 -43.7 8.6 -43.4C9.6 -43.1 10.4 -42.6 11.4 -42.5C12.4 -42.4 13.3 -42.3 14.5 -42.8C15.8 -43.2 17.1 -44.2 18.8 -45.4C20.5 -46.6 22.7 -48.7 24.6 -50.0C26.6 -51.2 29.0 -52.7 30.5 -52.8C32.0 -52.9 33.1 -51.9 33.8 -50.5C34.4 -49.2 34.2 -46.5 34.3 -44.6C34.3 -42.7 34.1 -40.6 34.3 -39.1C34.5 -37.6 35.0 -36.6 35.6 -35.6C36.2 -34.7 37.2 -34.1 38.0 -33.3C38.8 -32.6 39.8 -31.9 40.5 -31.1C41.3 -30.3 42.0 -29.4 42.6 -28.5C43.2 -27.5 43.7 -26.5 44.0 -25.4C44.4 -24.4 44.7 -23.2 44.8 -22.1C45.0 -21.0 45.1 -19.8 45.1 -18.7C45.2 -17.6 45.2 -16.4 45.1 -15.3C45.1 -14.2 45.0 -13.1 45.0 -12.1C45.0 -11.0 44.9 -10.0 45.0 -9.0C45.1 -7.9 44.9 -7.0 45.6 -6.0C46.3 -5.1 46.9 -4.2 49.2 -3.2C51.6 -2.2 56.1 -1.3 59.6 0.0ZM0.9 79.6a5.1 5.1 0 1 1 10.2 0a5.1 5.1 0 1 1 -10.2 0ZM5.1 88.7a3.7 3.7 0 1 1 7.3 0a3.7 3.7 0 1 1 -7.3 0ZM-78.6 -11.1a2.9 2.9 0 1 1 5.8 0a2.9 2.9 0 1 1 -5.8 0ZM-25.1 65.7a3.2 3.2 0 1 1 6.4 0a3.2 3.2 0 1 1 -6.4 0ZM-72.0 -3.2a2.2 2.2 0 1 1 4.3 0a2.2 2.2 0 1 1 -4.3 0ZM-69.1 -38.9a3.4 3.4 0 1 1 6.8 0a3.4 3.4 0 1 1 -6.8 0ZM-39.5 -79.6a3.3 3.3 0 1 1 6.6 0a3.3 3.3 0 1 1 -6.6 0ZM77.2 -4.5a1.8 1.8 0 1 1 3.5 0a1.8 1.8 0 1 1 -3.5 0ZM53.3 -68.0a3.4 3.4 0 1 1 6.8 0a3.4 3.4 0 1 1 -6.8 0Z"/></symbol>
+  <symbol id="splat-2" viewBox="-110 -110 220 220"><path d="M52.2 0.0C55.9 1.2 64.0 2.8 67.4 4.4C70.9 6.0 72.7 8.1 72.9 9.6C73.0 11.1 69.4 12.2 68.5 13.6C67.6 15.0 67.9 16.6 67.4 18.0C66.8 19.5 66.1 20.9 65.3 22.2C64.4 23.4 62.8 24.4 62.3 25.8C61.7 27.2 61.8 28.8 62.0 30.6C62.2 32.4 63.5 34.8 63.3 36.6C63.2 38.3 62.8 40.1 61.2 40.9C59.6 41.7 56.5 41.5 53.8 41.3C51.1 41.0 47.5 39.9 44.8 39.3C42.2 38.7 39.8 38.1 37.9 37.9C35.9 37.6 34.6 37.7 33.4 38.0C32.1 38.4 31.2 38.9 30.5 39.8C29.8 40.7 29.3 41.8 29.1 43.5C28.9 45.3 28.9 47.5 29.1 50.5C29.4 53.5 30.3 58.1 30.4 61.7C30.6 65.3 31.3 71.5 30.0 72.3C28.7 73.2 25.2 69.7 22.7 66.8C20.1 63.9 16.8 57.6 14.7 54.8C12.5 51.9 11.3 50.8 9.9 49.8C8.5 48.8 7.5 49.0 6.4 48.8C5.3 48.6 4.3 48.8 3.2 48.7C2.1 48.6 1.0 48.5 0.0 48.3C-1.0 48.1 -2.1 47.7 -3.1 47.3C-4.1 46.9 -5.1 46.3 -6.0 45.7C-7.0 45.2 -7.9 44.5 -8.7 43.8C-9.6 43.1 -10.4 42.3 -11.2 41.6C-11.9 40.9 -12.7 40.2 -13.4 39.6C-14.2 38.9 -14.9 38.3 -15.6 37.8C-16.4 37.2 -17.1 36.8 -17.9 36.4C-18.7 36.0 -19.5 35.6 -20.4 35.3C-21.3 35.0 -22.2 34.8 -23.1 34.6C-24.0 34.3 -25.0 34.2 -26.0 33.9C-27.0 33.7 -28.1 33.5 -29.1 33.1C-30.1 32.8 -31.1 32.5 -32.1 32.1C-33.1 31.7 -34.0 31.2 -35.0 30.7C-35.9 30.1 -36.7 29.5 -37.7 28.9C-38.6 28.3 -39.4 27.7 -40.6 27.1C-41.8 26.6 -42.9 26.1 -44.7 25.8C-46.4 25.5 -48.5 25.3 -51.1 25.2C-53.7 25.1 -57.1 25.2 -60.5 25.1C-63.9 24.9 -68.3 24.9 -71.3 24.2C-74.4 23.6 -77.7 22.6 -78.7 21.1C-79.7 19.6 -79.1 17.4 -77.3 15.4C-75.5 13.3 -71.2 10.9 -68.0 8.9C-64.8 7.0 -60.6 5.3 -58.1 3.8C-55.5 2.3 -53.7 1.2 -52.5 0.0C-51.3 -1.2 -51.2 -2.2 -50.9 -3.3C-50.5 -4.4 -50.6 -5.5 -50.5 -6.6C-50.4 -7.7 -50.3 -8.9 -50.0 -9.9C-49.7 -11.0 -49.3 -12.1 -48.8 -13.1C-48.2 -14.1 -47.6 -15.0 -46.9 -15.9C-46.1 -16.8 -45.3 -17.6 -44.4 -18.4C-43.6 -19.2 -42.6 -19.9 -41.7 -20.5C-40.7 -21.2 -39.7 -21.8 -38.8 -22.4C-37.9 -23.0 -37.0 -23.6 -36.1 -24.1C-35.3 -24.7 -34.4 -25.3 -33.7 -25.9C-32.9 -26.5 -32.2 -27.0 -31.6 -27.7C-31.0 -28.5 -30.3 -28.9 -30.2 -30.2C-30.2 -31.5 -30.4 -33.0 -31.3 -35.7C-32.3 -38.5 -35.2 -43.8 -35.9 -46.8C-36.6 -49.7 -37.1 -53.2 -35.7 -53.4C-34.3 -53.6 -30.1 -49.6 -27.6 -47.8C-25.2 -46.0 -22.6 -43.4 -20.9 -42.5C-19.2 -41.5 -18.4 -41.9 -17.3 -41.9C-16.3 -41.9 -15.4 -42.3 -14.4 -42.5C-13.4 -42.6 -12.4 -42.7 -11.5 -42.8C-10.5 -42.9 -9.5 -42.9 -8.5 -42.9C-7.6 -42.9 -6.6 -42.9 -5.7 -43.0C-4.7 -43.0 -3.8 -43.1 -2.8 -43.2C-1.9 -43.3 -1.0 -43.5 -0.0 -43.8C1.0 -44.0 1.9 -44.2 2.9 -44.9C4.0 -45.6 5.0 -46.4 6.3 -47.9C7.6 -49.3 9.1 -51.8 10.6 -53.5C12.2 -55.1 14.1 -57.4 15.5 -57.7C16.8 -58.1 18.0 -56.8 18.9 -55.6C19.8 -54.3 20.2 -51.8 20.9 -50.4C21.6 -48.9 22.3 -47.8 23.1 -46.8C23.9 -45.8 24.8 -45.2 25.6 -44.4C26.5 -43.6 27.3 -42.8 28.0 -41.9C28.7 -41.0 29.4 -40.1 30.0 -39.1C30.6 -38.1 31.1 -37.0 31.6 -36.0C32.1 -35.0 32.5 -34.0 33.0 -33.0C33.4 -32.0 33.8 -31.0 34.3 -30.1C34.7 -29.1 35.2 -28.2 35.7 -27.4C36.1 -26.5 36.6 -25.7 37.2 -24.8C37.7 -24.0 38.3 -23.2 38.8 -22.4C39.4 -21.6 40.0 -20.8 40.6 -20.0C41.1 -19.2 41.7 -18.3 42.2 -17.5C42.7 -16.6 43.1 -15.7 43.5 -14.8C43.9 -13.8 44.2 -12.9 44.4 -11.9C44.6 -10.9 44.7 -9.9 44.8 -8.9C44.8 -7.9 44.6 -6.9 44.8 -5.9C44.9 -4.9 44.3 -4.0 45.6 -3.0C46.8 -2.0 48.6 -1.2 52.2 0.0ZM-78.4 22.6a5.0 5.0 0 1 1 10.0 0a5.0 5.0 0 1 1 -10.0 0ZM-80.3 16.8a3.8 3.8 0 1 1 7.7 0a3.8 3.8 0 1 1 -7.7 0ZM27.3 69.8a3.1 3.1 0 1 1 6.2 0a3.1 3.1 0 1 1 -6.2 0ZM70.2 6.9a3.2 3.2 0 1 1 6.3 0a3.2 3.2 0 1 1 -6.3 0ZM23.9 69.6a3.5 3.5 0 1 1 7.0 0a3.5 3.5 0 1 1 -7.0 0ZM36.4 -57.5a3.5 3.5 0 1 1 7.0 0a3.5 3.5 0 1 1 -7.0 0ZM31.2 -47.1a1.9 1.9 0 1 1 3.7 0a1.9 1.9 0 1 1 -3.7 0ZM57.8 -38.8a3.6 3.6 0 1 1 7.1 0a3.6 3.6 0 1 1 -7.1 0ZM-50.6 36.0a2.8 2.8 0 1 1 5.6 0a2.8 2.8 0 1 1 -5.6 0ZM10.2 -65.1a1.6 1.6 0 1 1 3.2 0a1.6 1.6 0 1 1 -3.2 0Z"/></symbol>
+  <symbol id="splat-3" viewBox="-110 -110 220 220"><path d="M68.8 0.0C71.1 1.5 73.6 3.3 73.7 4.8C73.9 6.4 71.8 8.0 69.7 9.2C67.6 10.4 63.1 11.1 61.2 12.2C59.2 13.2 57.3 13.9 58.0 15.6C58.8 17.3 62.3 19.5 65.9 22.4C69.5 25.3 76.3 29.7 79.8 33.0C83.2 36.4 86.8 40.6 86.6 42.7C86.4 44.8 82.7 45.6 78.6 45.4C74.5 45.2 67.2 42.9 61.9 41.4C56.6 39.8 50.9 37.3 46.8 35.9C42.6 34.4 39.7 33.3 37.2 32.6C34.7 31.9 33.2 31.8 31.7 31.7C30.2 31.6 29.2 31.8 28.2 32.2C27.3 32.6 26.4 32.8 26.1 34.0C25.7 35.1 25.6 36.4 26.1 39.1C26.6 41.8 28.0 46.0 28.9 50.1C29.8 54.2 31.5 60.5 31.5 63.9C31.6 67.3 30.8 70.3 29.3 70.7C27.8 71.2 24.9 68.6 22.6 66.6C20.3 64.5 17.6 60.6 15.6 58.4C13.6 56.2 12.0 54.0 10.6 53.3C9.2 52.6 8.2 52.7 7.1 54.1C6.0 55.5 5.2 59.1 4.0 61.6C2.8 64.1 1.4 68.3 0.0 69.0C-1.4 69.8 -3.1 68.2 -4.3 66.0C-5.6 63.8 -6.5 58.8 -7.4 55.9C-8.3 53.1 -8.9 50.5 -9.8 49.1C-10.6 47.6 -11.5 47.3 -12.7 47.2C-13.8 47.1 -15.0 47.7 -16.5 48.5C-17.9 49.2 -19.6 50.6 -21.4 51.7C-23.2 52.8 -25.3 54.4 -27.1 55.0C-28.9 55.6 -30.8 56.0 -32.1 55.5C-33.3 55.0 -34.2 53.6 -34.8 52.0C-35.3 50.5 -35.3 48.1 -35.4 46.2C-35.6 44.3 -35.5 42.2 -35.6 40.6C-35.7 38.9 -35.9 37.5 -36.2 36.2C-36.5 34.9 -36.9 33.8 -37.2 32.7C-37.6 31.5 -37.9 30.4 -38.2 29.3C-38.4 28.2 -38.6 27.0 -38.7 25.9C-38.8 24.7 -38.9 23.6 -38.9 22.5C-38.9 21.3 -38.9 20.2 -38.9 19.2C-38.8 18.1 -38.8 17.1 -38.8 16.1C-38.9 15.1 -38.9 14.2 -39.0 13.3C-39.2 12.3 -39.3 11.5 -39.6 10.6C-39.8 9.7 -40.2 8.9 -40.5 8.1C-40.9 7.2 -41.3 6.4 -41.7 5.5C-42.1 4.6 -42.6 3.7 -43.0 2.8C-43.4 1.9 -43.9 1.0 -44.2 0.0C-44.5 -1.0 -44.9 -2.0 -45.1 -3.0C-45.3 -4.0 -45.4 -5.0 -45.4 -6.0C-45.4 -7.0 -45.4 -8.0 -45.2 -9.0C-45.0 -10.0 -44.8 -11.0 -44.4 -11.9C-44.1 -12.9 -43.7 -13.8 -43.2 -14.7C-42.8 -15.6 -42.3 -16.4 -41.8 -17.3C-41.3 -18.2 -40.8 -19.0 -40.3 -19.9C-39.8 -20.7 -39.4 -21.6 -39.0 -22.5C-38.7 -23.5 -38.3 -24.4 -38.2 -25.5C-38.1 -26.7 -38.0 -27.8 -38.3 -29.4C-38.6 -31.0 -39.1 -32.8 -39.8 -34.9C-40.5 -37.1 -41.7 -39.8 -42.5 -42.5C-43.3 -45.2 -44.4 -48.5 -44.7 -51.0C-45.0 -53.5 -45.0 -56.2 -44.2 -57.6C-43.4 -59.1 -41.8 -59.8 -40.0 -59.8C-38.2 -59.8 -35.5 -58.7 -33.3 -57.6C-31.0 -56.6 -28.5 -54.8 -26.4 -53.6C-24.4 -52.4 -22.5 -51.1 -20.9 -50.4C-19.3 -49.8 -18.1 -49.5 -16.9 -49.8C-15.8 -50.1 -14.9 -51.0 -14.0 -52.2C-13.1 -53.5 -12.3 -55.4 -11.4 -57.1C-10.4 -58.8 -9.4 -61.0 -8.2 -62.2C-7.0 -63.5 -5.6 -64.5 -4.2 -64.6C-2.9 -64.6 -1.3 -63.6 -0.0 -62.3C1.3 -61.0 2.6 -58.7 3.7 -56.8C4.8 -54.9 5.8 -52.6 6.7 -50.9C7.6 -49.3 8.4 -47.9 9.3 -46.8C10.2 -45.7 11.0 -45.1 11.9 -44.5C12.8 -43.8 13.7 -43.5 14.6 -43.0C15.5 -42.6 16.4 -42.2 17.3 -41.7C18.1 -41.2 19.0 -40.6 19.7 -40.0C20.5 -39.4 21.3 -38.7 22.0 -38.0C22.7 -37.4 23.3 -36.6 24.0 -35.9C24.6 -35.2 25.2 -34.4 25.9 -33.7C26.5 -33.0 27.1 -32.3 27.8 -31.7C28.4 -31.0 29.1 -30.4 29.9 -29.9C30.6 -29.3 31.4 -28.8 32.2 -28.3C33.1 -27.7 34.0 -27.3 34.9 -26.8C35.8 -26.3 36.8 -25.8 37.8 -25.3C38.8 -24.7 39.8 -24.2 40.8 -23.6C41.8 -22.9 42.8 -22.3 43.7 -21.5C44.6 -20.8 45.4 -20.0 46.2 -19.1C46.9 -18.3 47.6 -17.3 48.1 -16.3C48.6 -15.3 49.0 -14.3 49.5 -13.3C49.9 -12.2 50.1 -11.1 50.7 -10.1C51.4 -9.1 52.0 -8.1 53.6 -7.1C55.1 -6.0 57.5 -5.1 60.0 -3.9C62.5 -2.8 66.5 -1.5 68.8 0.0ZM-53.1 -66.3a3.9 3.9 0 1 1 7.9 0a3.9 3.9 0 1 1 -7.9 0ZM19.0 63.3a3.2 3.2 0 1 1 6.4 0a3.2 3.2 0 1 1 -6.4 0ZM64.7 37.4a4.5 4.5 0 1 1 9.1 0a4.5 4.5 0 1 1 -9.1 0ZM-8.0 -85.1a2.8 2.8 0 1 1 5.5 0a2.8 2.8 0 1 1 -5.5 0ZM-4.9 81.8a3.3 3.3 0 1 1 6.7 0a3.3 3.3 0 1 1 -6.7 0ZM-65.4 -31.8a2.1 2.1 0 1 1 4.2 0a2.1 2.1 0 1 1 -4.2 0ZM-79.6 32.0a2.2 2.2 0 1 1 4.4 0a2.2 2.2 0 1 1 -4.4 0ZM-54.9 63.4a1.8 1.8 0 1 1 3.6 0a1.8 1.8 0 1 1 -3.6 0ZM-48.8 57.9a2.5 2.5 0 1 1 5.1 0a2.5 2.5 0 1 1 -5.1 0ZM37.1 71.9a2.5 2.5 0 1 1 5.0 0a2.5 2.5 0 1 1 -5.0 0Z"/></symbol>
+  <symbol id="splat-4" viewBox="-110 -110 220 220"><path d="M50.5 0.0C52.3 1.1 55.2 2.3 57.7 3.8C60.1 5.2 63.9 7.0 65.3 8.6C66.7 10.1 67.2 12.0 65.9 13.1C64.6 14.2 60.6 14.9 57.5 15.4C54.3 15.9 49.9 15.7 47.1 16.0C44.3 16.2 42.3 16.4 40.9 16.9C39.5 17.4 39.1 18.2 38.7 19.1C38.2 19.9 38.3 21.0 38.2 22.1C38.1 23.1 38.1 24.3 38.0 25.4C37.9 26.5 37.7 27.7 37.5 28.8C37.3 29.9 37.0 31.0 36.5 32.0C36.1 33.1 35.6 34.1 35.0 35.0C34.4 35.9 33.6 36.7 32.9 37.5C32.1 38.2 31.2 38.9 30.3 39.4C29.3 40.0 28.3 40.5 27.3 40.9C26.3 41.3 25.3 41.6 24.3 42.0C23.3 42.5 22.3 42.7 21.4 43.4C20.5 44.1 19.7 44.7 19.1 46.1C18.5 47.5 18.1 49.4 17.6 51.9C17.1 54.3 16.9 57.9 16.2 60.6C15.6 63.3 14.7 66.7 13.5 68.0C12.3 69.4 10.6 69.6 9.1 68.8C7.5 67.9 5.6 65.1 4.1 63.0C2.6 60.8 1.2 57.8 0.0 55.8C-1.2 53.8 -2.3 52.2 -3.3 51.0C-4.4 49.8 -5.4 49.2 -6.4 48.5C-7.4 47.7 -8.3 47.2 -9.3 46.6C-10.2 45.9 -11.1 45.2 -11.9 44.5C-12.8 43.8 -13.6 42.9 -14.3 42.1C-15.1 41.3 -15.8 40.5 -16.4 39.7C-17.1 38.9 -17.8 38.1 -18.4 37.4C-19.1 36.7 -19.7 36.0 -20.4 35.4C-21.1 34.8 -21.8 34.2 -22.5 33.7C-23.3 33.3 -24.1 32.8 -24.9 32.5C-25.7 32.1 -26.6 31.7 -27.5 31.4C-28.4 31.0 -29.4 30.7 -30.3 30.3C-31.3 30.0 -32.3 29.6 -33.3 29.2C-34.2 28.7 -35.2 28.2 -36.1 27.7C-36.9 27.1 -37.8 26.5 -38.6 25.8C-39.3 25.1 -40.1 24.3 -40.7 23.5C-41.3 22.7 -41.8 21.8 -42.2 20.8C-42.7 19.9 -43.0 18.9 -43.3 17.9C-43.6 17.0 -43.8 16.0 -44.0 14.9C-44.2 13.9 -44.4 12.9 -44.5 11.9C-44.7 10.9 -44.8 9.9 -45.0 8.9C-45.2 8.0 -45.3 7.0 -45.6 6.0C-45.8 5.0 -46.1 4.0 -46.4 3.0C-46.7 2.0 -47.0 1.0 -47.6 0.0C-48.1 -1.0 -48.6 -2.1 -49.6 -3.3C-50.6 -4.4 -51.9 -5.6 -53.4 -7.0C-54.9 -8.4 -57.2 -10.1 -58.5 -11.6C-59.9 -13.2 -61.6 -15.1 -61.8 -16.5C-61.9 -18.0 -61.1 -19.3 -59.7 -20.3C-58.3 -21.2 -55.6 -21.7 -53.5 -22.2C-51.4 -22.6 -48.9 -22.8 -47.0 -23.2C-45.2 -23.6 -43.7 -24.0 -42.3 -24.4C-40.9 -24.8 -39.8 -25.3 -38.7 -25.8C-37.5 -26.3 -36.5 -26.7 -35.6 -27.3C-34.8 -28.0 -34.0 -28.4 -33.6 -29.5C-33.3 -30.5 -33.5 -32.0 -33.5 -33.5C-33.6 -35.1 -34.3 -37.5 -33.8 -38.6C-33.4 -39.7 -32.2 -40.2 -30.9 -40.3C-29.6 -40.3 -27.4 -39.1 -25.9 -38.8C-24.5 -38.6 -23.2 -38.2 -22.3 -38.7C-21.5 -39.2 -21.0 -40.0 -20.7 -42.0C-20.5 -43.9 -21.1 -47.8 -20.9 -50.4C-20.7 -52.9 -20.6 -56.9 -19.5 -57.4C-18.4 -57.8 -16.0 -55.0 -14.2 -53.2C-12.5 -51.3 -10.6 -47.9 -9.2 -46.3C-7.8 -44.8 -6.8 -44.4 -5.8 -44.0C-4.7 -43.5 -3.8 -43.6 -2.8 -43.4C-1.9 -43.3 -0.9 -43.2 -0.0 -43.2C0.9 -43.2 1.9 -43.2 2.8 -43.4C3.8 -43.6 4.8 -43.9 5.9 -44.4C6.9 -45.0 8.0 -45.8 9.3 -46.8C10.6 -47.7 12.0 -49.1 13.4 -50.2C14.9 -51.3 16.6 -52.6 18.0 -53.2C19.5 -53.8 21.0 -54.1 22.3 -53.8C23.5 -53.5 24.6 -52.6 25.5 -51.6C26.4 -50.6 27.0 -49.2 27.7 -47.9C28.4 -46.7 28.9 -45.4 29.6 -44.3C30.3 -43.2 30.9 -42.1 31.6 -41.2C32.4 -40.4 33.2 -39.6 34.3 -39.1C35.4 -38.7 36.9 -38.6 38.4 -38.4C39.9 -38.2 42.0 -38.5 43.2 -37.9C44.3 -37.2 45.2 -36.2 45.2 -34.7C45.3 -33.2 44.1 -30.8 43.4 -29.0C42.7 -27.2 41.6 -25.2 41.1 -23.8C40.7 -22.3 40.5 -21.1 40.9 -20.2C41.4 -19.2 41.9 -18.6 43.9 -18.2C45.8 -17.8 50.1 -18.3 52.7 -17.9C55.2 -17.5 59.0 -17.1 59.1 -15.8C59.2 -14.6 55.1 -12.2 53.2 -10.6C51.3 -9.0 48.4 -7.5 47.4 -6.2C46.4 -5.0 46.7 -4.1 47.2 -3.1C47.7 -2.1 48.8 -1.1 50.5 0.0ZM-50.2 -55.2a4.2 4.2 0 1 1 8.4 0a4.2 4.2 0 1 1 -8.4 0ZM72.1 14.3a3.4 3.4 0 1 1 6.9 0a3.4 3.4 0 1 1 -6.9 0ZM69.5 12.4a4.2 4.2 0 1 1 8.5 0a4.2 4.2 0 1 1 -8.5 0ZM23.1 -65.0a2.4 2.4 0 1 1 4.7 0a2.4 2.4 0 1 1 -4.7 0ZM-25.2 -67.2a2.5 2.5 0 1 1 4.9 0a2.5 2.5 0 1 1 -4.9 0ZM63.0 -18.2a3.1 3.1 0 1 1 6.2 0a3.1 3.1 0 1 1 -6.2 0ZM-47.8 -52.1a2.2 2.2 0 1 1 4.4 0a2.2 2.2 0 1 1 -4.4 0ZM13.2 64.0a3.5 3.5 0 1 1 6.9 0a3.5 3.5 0 1 1 -6.9 0ZM-47.9 -61.8a1.8 1.8 0 1 1 3.6 0a1.8 1.8 0 1 1 -3.6 0ZM-10.4 -62.2a2.2 2.2 0 1 1 4.5 0a2.2 2.2 0 1 1 -4.5 0ZM75.3 -5.1a2.6 2.6 0 1 1 5.3 0a2.6 2.6 0 1 1 -5.3 0Z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- preloader: the logo lands like a paint hit, then the page opens (≈1.5 s, skipped for reduced motion) -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__stage">
+    <svg class="preloader__splat preloader__splat--1"><use href="#splat-1"/></svg>
+    <svg class="preloader__splat preloader__splat--2"><use href="#splat-3"/></svg>
+    <svg class="preloader__splat preloader__splat--3"><use href="#splat-2"/></svg>
+    <img class="preloader__logo" src="assets/img/logo-320.webp" alt="" width="320" height="207">
+  </div>
+</div>
+
+<!-- ============ Header: one continuous strip ============ -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar" aria-label="Hauptnavigation" data-open="false">
+      <a class="brand" href="#top" aria-label="Farbfabrik Wesenberg Paintball, zum Seitenanfang">
+        <img class="brand__logo" src="assets/img/logo-320.webp" alt="Farbfabrik Wesenberg Paintball" width="320" height="207">
+      </a>
+      <div class="navbar__menu" id="menu">
+        <div class="navbar__sheet">
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="#park"><span data-t="Der Park">Der Park</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="navbar__link" href="#anlaesse"><span data-t="Anlässe">Anlässe</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="navbar__link" href="#preise"><span data-t="Preise">Preise</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="navbar__link" href="#ablauf"><span data-t="Ablauf">Ablauf</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="navbar__link" href="#galerie"><span data-t="Galerie">Galerie</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+          <li><a class="navbar__link" href="#fragen"><span data-t="FAQ">FAQ</span><svg class="navbar__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <div class="navbar__sheet-foot">
+          <a class="btn btn--green" href="#kontakt">Termin anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--tile btn--wide" href="tel:+4939832269549" aria-label="Anrufen: 039832 269549"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Anrufen</span></a>
+        </div>
+        </div>
+      </div>
+      <div class="navbar__actions">
+        <a class="btn btn--tile navbar__phone" href="tel:+4939832269549" aria-label="Anrufen: 039832 269549"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+        <a class="btn btn--green navbar__cta" href="#kontakt">Termin anfragen</a>
+        <button class="btn btn--tile navbar__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <svg class="navbar__icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="navbar__icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+          <span class="visually-hidden">Menü öffnen</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <picture>
+      <source media="(max-width: 48rem)" srcset="assets/img/feld-900.webp">
+      <img src="assets/img/feld.webp" alt="" width="1376" height="774" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="hero__hits" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <div class="eyebrow eyebrow--dark"><p>Paintpark Wesenberg · Mecklenburgische Seenplatte</p></div>
+      <div class="display"><h1 id="hero-title">Dein <em>Abenteuer</em> wartet.</h1></div>
+      <div class="lead lead--dark"><p>12 Spielfelder auf 60.000&nbsp;m². Ausrüstung leihen, Einweisung bekommen, losspielen: von 9 bis 17&nbsp;Uhr, solange die Farbe reicht.</p></div>
+      <div class="hero__ctas">
+        <a class="btn btn--green btn--lg" href="#kontakt">Termin anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#preise">Preise ansehen</a>
+      </div>
+    </div>
+
+    <div class="hero__photos" aria-hidden="true">
+      <figure class="snap snap--a">
+        <img src="assets/img/spieler-maske.webp" alt="" width="512" height="512">
+        <span class="snap__tape"></span>
+      </figure>
+      <figure class="snap snap--b">
+        <img src="assets/img/markierer-700.webp" alt="" width="700" height="467">
+        <span class="snap__tape"></span>
+      </figure>
+      <svg class="snap__hit"><use href="#splat-4"/></svg>
+    </div>
+  </div>
+
+  <div class="container hero__foot">
+    <dl class="score">
+      <div class="score__item"><dt>Spielfläche</dt><dd><b>60.000</b> m²</dd></div>
+      <div class="score__item"><dt>Spielfelder</dt><dd><b>12</b></dd></div>
+      <div class="score__item"><dt>Spielzeit</dt><dd><b>9–17</b> Uhr</dd></div>
+      <div class="score__item"><dt>Kids-Paintball</dt><dd>ab <b>10</b> J.</dd></div>
+    </dl>
+    <p class="hero__hint" aria-hidden="true"><svg><use href="#i-target"/></svg>Zielen, klicken, treffen.</p>
+  </div>
+</section>
+
+<!-- tape band -->
+<div class="tape" aria-hidden="true">
+  <div class="tape__track">
+    <span>Kindergeburtstag</span><span>Firmenevent</span><span>Junggesellenabschied</span><span>Turnier</span><span>Vereinssport</span><span>Urlaub &amp; Ausflug</span>
+    <span>Kindergeburtstag</span><span>Firmenevent</span><span>Junggesellenabschied</span><span>Turnier</span><span>Vereinssport</span><span>Urlaub &amp; Ausflug</span>
+  </div>
+</div>
+
+<!-- ============ Der Park ============ -->
+<section class="section park" id="park" aria-labelledby="park-title">
+  <div class="container park__grid">
+    <div class="park__copy reveal">
+      <div class="eyebrow"><p>Willkommen in Wesenberg</p></div>
+      <div class="heading"><h2 id="park-title">Willkommen in der <em>Farbfabrik</em>.</h2></div>
+      <div class="lead"><p>Reist als Gruppe an und tretet auf verschiedenen Spielfeldern gegeneinander an. Wir zeigen euch den Umgang mit den Markierern und erklären die Regeln, damit euer Tag ein Actiontag wird, von dem ihr noch lange redet.</p></div>
+      <ul class="perks">
+        <li class="perk"><svg aria-hidden="true"><use href="#i-mask"/></svg><div><h3>Komplette Leihausrüstung</h3><p>Markierer, Thermalmaske, Halsschutz und Luft sind im Paket.</p></div></li>
+        <li class="perk"><svg aria-hidden="true"><use href="#i-target"/></svg><div><h3>Einweisung vom Team</h3><p>Markierer, Maske und Spielregeln, bevor es losgeht.</p></div></li>
+        <li class="perk"><svg aria-hidden="true"><use href="#i-shower"/></svg><div><h3>Spinte &amp; Duschen</h3><p>Sanitäre Einrichtungen für Sie und Ihn sind vor Ort.</p></div></li>
+        <li class="perk"><svg aria-hidden="true"><use href="#i-burger"/></svg><div><h3>Burger am Wochenende</h3><p>Benny von der Burgermiliz: Burger, Pommes, Nuggets. Grill auf Wunsch.</p></div></li>
+      </ul>
+    </div>
+    <div class="park__media reveal">
+      <figure class="park__photo">
+        <img src="assets/img/luftbild-900.webp" srcset="assets/img/luftbild-900.webp 900w, assets/img/luftbild.webp 1600w" sizes="(max-width: 64rem) 100vw, 36rem" alt="Luftaufnahme des Paintparks Wesenberg: Spielfelder zwischen Wald und Feldern" width="900" height="675" loading="lazy">
+      </figure>
+      <div class="park__badge">
+        <svg aria-hidden="true"><use href="#splat-2"/></svg>
+        <p><b>60.000</b><span>m² Spielfläche</span></p>
+      </div>
+      <figure class="park__photo park__photo--small">
+        <img src="assets/img/feld-bunker-700.webp" alt="Spielfeld mit Bunkern aus Kabeltrommeln und Reifen" width="700" height="394" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Anlässe ============ -->
+<section class="section section--night anlaesse torn torn--1" id="anlaesse" aria-labelledby="anlaesse-title">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div class="section-head__main">
+        <div class="eyebrow eyebrow--dark"><p>Für jeden Anlass</p></div>
+        <div class="heading"><h2 id="anlaesse-title">Ihr bringt die Leute. <em>Wir die Farbe.</em></h2></div>
+      </div>
+      <div class="lead lead--dark"><p>Für euren Tag übernehmen wir den kompletten Service. Ihr müsst euch um fast nichts kümmern, außer ums Spielen.</p></div>
+    </div>
+
+    <div class="occ-row reveal">
+      <ul class="occ-list">
+        <li><a class="occ" href="#kontakt" data-anlass="Kindergeburtstag" style="--c: var(--pink)">
+          <span class="occ__img"><img src="assets/img/kids-600.webp" alt="" width="600" height="600" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">01</span><h3>Kindergeburtstag</h3><p>Kids ab 10 Jahren sind herzlich willkommen, mit Kinderpaintballs und einer Begleitperson ab 18.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+        <li><a class="occ" href="#kontakt" data-anlass="Firmenevent" style="--c: var(--blue)">
+          <span class="occ__img"><img src="assets/img/firmenevent-600.webp" alt="" width="600" height="450" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">02</span><h3>Firmenevent</h3><p>Raus aus dem Büro: Teambuilding, bei dem jeder mitzieht, weil nur als Team gewonnen wird.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+        <li><a class="occ" href="#kontakt" data-anlass="Junggesellenabschied" style="--c: var(--yellow)">
+          <span class="occ__img"><img src="assets/img/jga-600.webp" alt="" width="600" height="450" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">03</span><h3>Junggesellenabschied</h3><p>Kostüm an, Maske auf. Ein JGA, über den noch lange geredet wird. Kostüme gibt es bei uns.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+        <li><a class="occ" href="#kontakt" data-anlass="Turnier" style="--c: var(--green)">
+          <span class="occ__img"><img src="assets/img/turnier-600.webp" alt="" width="600" height="450" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">04</span><h3>Turnier</h3><p>Veranstaltet euer eigenes Turnier und spielt unter euren Gruppen einen Gewinn aus.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+        <li><a class="occ" href="#kontakt" data-anlass="Vereinssport" style="--c: var(--orange)">
+          <span class="occ__img"><img src="assets/img/verein-600.webp" alt="" width="600" height="450" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">05</span><h3>Vereinssport</h3><p>Abwechslung fürs Training und Zusammenhalt im Verein, auf dem Feld auf die Probe gestellt.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+        <li><a class="occ" href="#kontakt" data-anlass="Urlaub &amp; Ausflug" style="--c: var(--violet)">
+          <span class="occ__img"><img src="assets/img/gruppe-600.webp" alt="" width="600" height="450" loading="lazy"></span>
+          <span class="occ__body"><span class="occ__num">06</span><h3>Urlaub &amp; Ausflug</h3><p>Urlaub an der Seenplatte? Ein Tagesausflug mit Adrenalin, für Familien, Freunde und Klassen.</p><span class="occ__cta">Anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Preise ============ -->
+<section class="section section--tint preise torn torn--2" id="preise" aria-labelledby="preise-title">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div class="section-head__main">
+        <div class="eyebrow"><p>Preise &amp; Pakete</p></div>
+        <div class="heading"><h2 id="preise-title">Klare Preise. <em>Volle Ladung.</em></h2></div>
+      </div>
+      <div class="lead"><p>Gespielt wird von 9 bis 17 Uhr. Keine feste Spieldauer, keine Rundenzahl: Ihr spielt, bis die Paintballs alle sind.</p></div>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Preise für">
+      <button class="tabs__tab" role="tab" id="tab-erw" aria-controls="panel-erw" aria-selected="true">Erwachsene <small>ab 18</small></button>
+      <button class="tabs__tab" role="tab" id="tab-kids" aria-controls="panel-kids" aria-selected="false" tabindex="-1">Kids <small>ab 10</small></button>
+      <span class="tabs__ink" aria-hidden="true"></span>
+    </div>
+
+    <!-- Erwachsene -->
+    <div class="tabs__panel" id="panel-erw" role="tabpanel" aria-labelledby="tab-erw">
+      <div class="prices reveal">
+        <article class="price" style="--c: var(--pink)">
+          <div class="price__top">
+            <h3>Kleines Paket</h3>
+            <p class="price__balls">500 Paintballs</p>
+          </div>
+          <div class="price__amount"><svg aria-hidden="true"><use href="#splat-1"/></svg><p><b>45</b><span>€</span></p></div>
+          <p class="price__per">pro Person</p>
+          <dl class="price__groups">
+            <div><dt>ab 10 Personen</dt><dd>40 €</dd></div>
+            <div><dt>ab 20 Personen</dt><dd>35 €</dd></div>
+          </dl>
+          <ul class="price__incl">
+            <li>Markierer &amp; Luft</li><li>Thermalmaske &amp; Halsschutz</li><li>Brustpanzer für Frauen</li>
+          </ul>
+          <a class="btn btn--dark price__btn" href="#kontakt" data-paket="Kleines Paket (45 €)">Paket anfragen</a>
+        </article>
+
+        <article class="price price--feature" style="--c: var(--yellow)">
+          <div class="price__top">
+            <h3>Großes Paket</h3>
+            <p class="price__balls">1.000 Paintballs</p>
+          </div>
+          <div class="price__amount"><svg aria-hidden="true"><use href="#splat-2"/></svg><p><b>55</b><span>€</span></p></div>
+          <p class="price__per">pro Person</p>
+          <dl class="price__groups">
+            <div><dt>ab 10 Personen</dt><dd>50 €</dd></div>
+            <div><dt>ab 20 Personen</dt><dd>45 €</dd></div>
+          </dl>
+          <ul class="price__incl">
+            <li>Markierer &amp; Luft</li><li>Thermalmaske &amp; Halsschutz</li><li>Brustpanzer für Frauen</li>
+          </ul>
+          <a class="btn btn--dark price__btn" href="#kontakt" data-paket="Großes Paket (55 €)">Paket anfragen</a>
+        </article>
+
+        <article class="price" style="--c: var(--green)">
+          <div class="price__top">
+            <h3>Eigenausrüster</h3>
+            <p class="price__balls">Platzgebühr</p>
+          </div>
+          <div class="price__amount"><svg aria-hidden="true"><use href="#splat-4"/></svg><p><b>25</b><span>€</span></p></div>
+          <p class="price__per">pro Person</p>
+          <p class="price__note">Für alle mit eigenem Markierer (deutsche Zulassung) und für Paintball zugelassener Maske. Paintballs kauft ihr bei uns vor Ort.</p>
+          <a class="btn btn--dark price__btn" href="#kontakt" data-paket="Eigenausrüster (25 €)">Anfragen</a>
+        </article>
+      </div>
+
+      <div class="price-extras reveal">
+        <!-- Gruppenrechner -->
+        <div class="calc" aria-labelledby="calc-title">
+          <div class="calc__head">
+            <h3 id="calc-title">Gruppenrechner</h3>
+            <p>Wie viele seid ihr? Der Gruppenpreis gilt ab 10 Personen.</p>
+          </div>
+          <div class="calc__controls">
+            <div class="calc__field">
+              <p class="calc__label" id="calc-n-lbl">Personen</p>
+              <div class="stepper" data-min="1" data-max="80">
+                <button class="stepper__btn" type="button" data-step="-1" aria-label="Eine Person weniger"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+                <input class="stepper__input" id="calc-n" type="text" inputmode="numeric" value="12" aria-labelledby="calc-n-lbl" autocomplete="off">
+                <button class="stepper__btn" type="button" data-step="1" aria-label="Eine Person mehr"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+              </div>
+            </div>
+            <div class="calc__field">
+              <p class="calc__label" id="calc-p-lbl">Paket</p>
+              <div class="seg" role="radiogroup" aria-labelledby="calc-p-lbl">
+                <button type="button" class="seg__opt" role="radio" aria-checked="true" data-value="klein">Klein · 500</button>
+                <button type="button" class="seg__opt" role="radio" aria-checked="false" data-value="gross" tabindex="-1">Groß · 1.000</button>
+              </div>
+            </div>
+          </div>
+          <div class="calc__out" aria-live="polite">
+            <div class="calc__big"><p><b data-out="pp">40</b> € <span>pro Person</span></p></div>
+            <dl class="calc__facts">
+              <div><dt>Gesamt</dt><dd data-out="total">480 €</dd></div>
+              <div><dt>Paintballs</dt><dd data-out="balls">6.000</dd></div>
+            </dl>
+            <p class="calc__hint" data-out="hint">Noch 8 Personen bis zum Preis ab 20.</p>
+          </div>
+          <a class="btn btn--green calc__btn" href="#kontakt" data-calc-send>So anfragen <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="calc__small">Unverbindliche Beispielrechnung. Brustpanzer für Männer 5 € extra.</p>
+        </div>
+
+        <div class="extras">
+          <h3>Extras &amp; Nachkauf</h3>
+          <ul class="extras__list">
+            <li><span>Paintballs nachkaufen</span><b>ab 12,50 €</b></li>
+            <li><span>Thermalmaske (Eigenausrüster)</span><b>5 €</b></li>
+            <li><span>Brustpanzer für Männer</span><b>5 €</b></li>
+            <li><span>Battlepack</span><b>5 €</b></li>
+            <li><span>Kostüm, z.&nbsp;B. für den JGA</span><b>10 €</b></li>
+          </ul>
+          <p class="extras__note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Eigene Paintballs sind aus Sicherheits- und Umweltgründen nicht erlaubt.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kids -->
+    <div class="tabs__panel" id="panel-kids" role="tabpanel" aria-labelledby="tab-kids" hidden>
+      <div class="prices prices--kids">
+        <article class="price" style="--c: var(--blue)">
+          <div class="price__top">
+            <h3>Kleine Farbfabrik</h3>
+            <p class="price__balls">500 Kinderpaintballs</p>
+          </div>
+          <div class="price__amount"><svg aria-hidden="true"><use href="#splat-3"/></svg><p><b>60</b><span>€</span></p></div>
+          <p class="price__per">ab 2 Personen · Einzelpreis 30 €</p>
+          <ul class="price__incl">
+            <li>Markierer &amp; Luft</li><li>Thermalmaske &amp; Halsschutz</li><li>Brustpanzer</li><li>3 Stunden Spieldauer</li>
+          </ul>
+          <a class="btn btn--dark price__btn" href="#kontakt" data-paket="Kids: Kleine Farbfabrik (60 €)" data-anlass="Kindergeburtstag">Paket anfragen</a>
+        </article>
+
+        <article class="price price--feature" style="--c: var(--violet)">
+          <div class="price__top">
+            <h3>Große Farbfabrik</h3>
+            <p class="price__balls">1.000 Kinderpaintballs</p>
+          </div>
+          <div class="price__amount"><svg aria-hidden="true"><use href="#splat-1"/></svg><p><b>99</b><span>€</span></p></div>
+          <p class="price__per">für 5 Personen · jede weitere 30 €</p>
+          <ul class="price__incl">
+            <li>Markierer &amp; Luft</li><li>Thermalmaske &amp; Halsschutz</li><li>Brustpanzer</li><li>3 Stunden Spieldauer</li>
+          </ul>
+          <a class="btn btn--dark price__btn" href="#kontakt" data-paket="Kids: Große Farbfabrik (99 €)" data-anlass="Kindergeburtstag">Paket anfragen</a>
+        </article>
+
+        <div class="extras extras--kids">
+          <h3>Gut zu wissen</h3>
+          <ul class="extras__list">
+            <li><span>500 Kinderpaintballs nachkaufen</span><b>15 €</b></li>
+            <li><span>2.000 Kinderpaintballs nachkaufen</span><b>45 €</b></li>
+          </ul>
+          <ul class="checks">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kids-Paintball ab 10 Jahren</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Eine Begleitperson ab 18 muss dabei sein</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Spielzeit 9 bis 17 Uhr, Spieldauer 3 Stunden</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Ablauf ============ -->
+<section class="section ablauf" id="ablauf" aria-labelledby="ablauf-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><p>So läuft euer Tag</p></div>
+      <div class="heading"><h2 id="ablauf-title">Vom Anruf bis zum <em>letzten Treffer</em>.</h2></div>
+    </div>
+    <ol class="steps reveal">
+      <svg class="steps__path" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path d="M60 70 C 200 -10, 300 -10, 375 60 S 560 130, 625 60 S 820 -10, 940 70"/></svg>
+      <li class="step" style="--c: var(--pink)">
+        <div class="step__mark"><svg aria-hidden="true"><use href="#splat-1"/></svg><span>1</span></div>
+        <h3>Anfragen</h3>
+        <p>Schickt uns Wunschtermin und Gruppengröße. So liegt die Ausrüstung für alle bereit, wenn ihr ankommt.</p>
+      </li>
+      <li class="step" style="--c: var(--yellow)">
+        <div class="step__mark"><svg aria-hidden="true"><use href="#splat-2"/></svg><span>2</span></div>
+        <h3>Einweisung</h3>
+        <p>Wir erklären Markierer, Maske und Spielregeln. Ab 18 bitte den Personalausweis mitbringen.</p>
+      </li>
+      <li class="step" style="--c: var(--blue)">
+        <div class="step__mark"><svg aria-hidden="true"><use href="#splat-3"/></svg><span>3</span></div>
+        <h3>Spielen</h3>
+        <p>Zwölf Felder, verschiedene Szenarien. Getroffen? Dann ist die Runde für dich vorbei, in der nächsten bist du wieder dabei.</p>
+      </li>
+      <li class="step" style="--c: var(--green)">
+        <div class="step__mark"><svg aria-hidden="true"><use href="#splat-4"/></svg><span>4</span></div>
+        <h3>Durchatmen</h3>
+        <p>Duschen, Spinte, Getränke im Shop. Am Wochenende und an Feiertagen gibt es Burger von Benny.</p>
+      </li>
+    </ol>
+    <div class="bring reveal">
+      <p class="bring__title">Mitbringen:</p>
+      <ul>
+        <li>Kleidung, die dreckig werden darf</li>
+        <li>Wechselkleidung</li>
+        <li>Feste Schuhe</li>
+        <li>Personalausweis (ab 18)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Galerie ============ -->
+<section class="section section--night galerie torn torn--3" id="galerie" aria-labelledby="galerie-title">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div class="section-head__main">
+        <div class="eyebrow eyebrow--dark"><p>Eindrücke</p></div>
+        <div class="heading"><h2 id="galerie-title">Frisch aus dem <em>Park</em>.</h2></div>
+      </div>
+      <div class="galerie__social">
+        <a class="btn btn--ghost" href="https://www.instagram.com/farbfabrikwesenberg.paintball/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-insta"/></svg> Instagram</a>
+        <a class="btn btn--ghost" href="https://www.facebook.com/Farbfabrik-Paintpark-Wesenberg-107599714459157/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-fb"/></svg> Facebook</a>
+      </div>
+    </div>
+    <div class="mosaic reveal">
+      <figure class="mosaic__item mosaic__item--tall"><img src="assets/img/luftbild-felder.webp" alt="Die Spielfelder von oben, mit Bunkern und Netzen" width="1000" height="1131" loading="lazy"></figure>
+      <figure class="mosaic__item mosaic__item--wide"><img src="assets/img/feld-huette-700.webp" srcset="assets/img/feld-huette-700.webp 700w, assets/img/feld-huette.webp 1200w" sizes="(max-width: 48rem) 100vw, 50vw" alt="Spielfeld mit Holzhütte und hohem Gras" width="700" height="394" loading="lazy"></figure>
+      <figure class="mosaic__item"><img src="assets/img/grill-700.webp" alt="Gruppe am Grill nach dem Spiel" width="700" height="525" loading="lazy"></figure>
+      <figure class="mosaic__item"><img src="assets/img/kids-ausruestung.webp" alt="Kids-Ausrüstung: Maske, Weste und Markierer ab 10 Jahren" width="900" height="900" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Gutschein ============ -->
+<section class="gift torn torn--4" aria-labelledby="gift-title">
+  <div class="container gift__inner">
+    <div class="gift__copy reveal">
+      <div class="heading"><h2 id="gift-title">Verschenkt einen Actiontag.</h2></div>
+      <p>Geburtstag, Weihnachten, Abschied: Mit einem Gutschein der Farbfabrik sucht sich das Team den Termin selbst aus. Betrag frei wählbar.</p>
+      <a class="btn btn--dark btn--lg" href="#kontakt" data-anlass="Gutschein">Gutschein anfragen <svg aria-hidden="true"><use href="#i-gift"/></svg></a>
+    </div>
+    <figure class="gift__card reveal">
+      <img src="assets/img/gutschein.webp" alt="Geschenkgutschein der Farbfabrik Wesenberg" width="900" height="900" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq torn torn--5" id="fragen" aria-labelledby="faq-title">
+  <div class="container faq__grid">
+    <div class="faq__side reveal">
+      <div class="eyebrow"><p>Häufige Fragen</p></div>
+      <div class="heading"><h2 id="faq-title">Bevor ihr <em>loslegt</em>.</h2></div>
+      <div class="lead"><p>Alles, was vor dem ersten Paintball-Tag gefragt wird. Eure Frage fehlt? Dann meldet euch einfach bei uns.</p></div>
+      <a class="link-arrow" href="#kontakt">Zum Kontakt</a>
+    </div>
+    <div class="acc-list reveal">
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1">Was ist Paintball?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q1"><div class="acc__inner"><p>Ein taktischer Mannschaftssport: Die Spieler markieren sich mit Farbkugeln aus Druckluft-Markierern. Wer getroffen ist, verlässt das Feld. Die Farbe ist umweltfreundlich und baut sich im Freien innerhalb von zwei Wochen rückstandsfrei ab.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2">Ist Paintball gefährlich?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q2"><div class="acc__inner"><p>Nein. Alle tragen während des Spiels immer eine Maske, die Augen und Ohren schützt. Paintball gilt als eine der sichersten Sportarten und ist kein Kontaktsport. Handschuhe könnt ihr mitbringen oder bei uns leihen.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3">Tut ein Treffer weh?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q3"><div class="acc__inner"><p>Im ersten Moment kann es kurz zwiebeln, nach kurzer Zeit ist der Treffer vergessen. Im ungünstigen Fall bleibt ein blauer Fleck.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4">Ab welchem Alter darf ich spielen?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q4"><div class="acc__inner"><p>Ab 18 Jahren, bitte bringt euren Personalausweis mit. Kids ab 10 Jahren spielen bei uns Kids-Paintball, dann muss eine Begleitperson ab 18 dabei sein.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q5">Was ziehe ich an?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q5"><div class="acc__inner"><p>Kleidung, die schmutzig werden oder reißen darf, dazu Wechselkleidung und feste Schuhe. Die Farbe lässt sich auswaschen. Tarnkleidung ist erlaubt.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q6">Darf ich eigene Ausrüstung mitbringen?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q6"><div class="acc__inner"><p>Ja, wenn der Markierer der deutschen Zulassung entspricht und die Maske für Paintball zugelassen ist. Eigene Paintballs dürfen aus Sicherheits- und Umweltgründen nicht mit in den Park.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q7">Wie lange dauert ein Spiel?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q7"><div class="acc__inner"><p>Das hängt von der Teamgröße und dem Spielfeld ab. Eine feste Spieldauer oder Anzahl an Spielen gibt es nicht: Ihr spielt innerhalb der Öffnungszeit, solange der Vorrat an Paintballs reicht.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q8">Wird bei jedem Wetter gespielt?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q8"><div class="acc__inner"><p>Ja. Nur bei starkem Wind ist Spielen nicht zu empfehlen, weil die Paintballs in der Flugbahn abgelenkt werden.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q9">Gibt es Essen und Getränke?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q9"><div class="acc__inner"><p>Getränke und Snacks gibt es im Shop. Am Wochenende und an Feiertagen sorgt Benny mit seinem Burgerwagen für den großen Hunger. Einen Grill stellen wir euch gern zur Verfügung.</p></div></div>
+      </div>
+      <div class="acc">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q10">Muss ich reservieren?<svg aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+        <div class="acc__panel" id="q10"><div class="acc__inner"><p>Wir empfehlen es: Meldet euch vor eurem Termin, dann liegt die Ausrüstung für alle Spieler bereit.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Kontakt ============ -->
+<section class="section section--night kontakt torn torn--6" id="kontakt" aria-labelledby="kontakt-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow eyebrow--dark"><p>Kontakt &amp; Anfahrt</p></div>
+      <div class="heading"><h2 id="kontakt-title">Sichert euch <em>euren Termin</em>.</h2></div>
+    </div>
+    <div class="kontakt__grid">
+      <div class="kontakt__info reveal">
+        <ul class="info">
+          <li><a class="info__row" href="tel:+4939832269549"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><small>Telefon</small>039832 269549</span></a></li>
+          <li><a class="info__row" href="tel:+491739894708"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><small>Mobil</small>0173 9894708</span></a></li>
+          <li><a class="info__row" href="mailto:hallo@paintball-wesenberg.de"><svg aria-hidden="true"><use href="#i-mail"/></svg><span><small>E-Mail</small>hallo@paintball-wesenberg.de</span></a></li>
+          <li><div class="info__row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span><small>Spielzeit</small>9:00 bis 17:00 Uhr, nach Anmeldung</span></div></li>
+        </ul>
+        <div class="map">
+          <img src="assets/img/luftbild-halle-700.webp" alt="Luftbild vom Gelände Siedenheide 4 in Wesenberg" width="700" height="525" loading="lazy">
+          <div class="map__card">
+            <svg aria-hidden="true"><use href="#i-pin"/></svg>
+            <p><b>Farbfabrik Paintpark</b>Siedenheide 4, 17255 Wesenberg</p>
+            <a class="btn btn--green" href="https://www.google.com/maps/search/?api=1&amp;query=Farbfabrik+Paintball+Paintpark+Wesenberg+Siedenheide+4+17255+Wesenberg" target="_blank" rel="noopener">Route <svg aria-hidden="true"><use href="#i-route"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-cell reveal">
+        <form class="form" id="anfrage" novalidate>
+          <div class="form__head">
+            <h3>Termin anfragen</h3>
+            <p>Wir melden uns schnellstmöglich mit einer Bestätigung.</p>
+          </div>
+          <input type="hidden" name="access_key" value="WEB3FORMS-ACCESS-KEY">
+          <input type="hidden" name="subject" value="Neue Anfrage über paintball-wesenberg.de">
+          <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form__grid">
+            <div class="field field--full">
+              <label for="f-name">Name</label>
+              <input class="input" id="f-name" name="name" type="text" autocomplete="name" required>
+              <p class="field__err" id="f-name-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-tel">Telefon</label>
+              <input class="input" id="f-tel" name="telefon" type="tel" autocomplete="tel" required>
+              <p class="field__err" id="f-tel-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-mail">E-Mail</label>
+              <input class="input" id="f-mail" name="email" type="email" autocomplete="email" required>
+              <p class="field__err" id="f-mail-err"></p>
+            </div>
+
+            <div class="field">
+              <label id="f-date-lbl" for="f-date-btn">Wunschtermin</label>
+              <div class="datepick">
+                <input type="hidden" name="wunschtermin" id="f-date">
+                <button class="input datepick__btn is-empty" id="f-date-btn" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="f-date-cal">
+                  <span class="datepick__val">TT.MM.JJJJ</span><svg aria-hidden="true"><use href="#i-cal"/></svg>
+                </button>
+                <div class="cal" id="f-date-cal" role="dialog" aria-modal="false" aria-label="Wunschtermin wählen" hidden>
+                  <div class="cal__head">
+                    <button class="cal__nav" type="button" data-cal="-1" aria-label="Vorheriger Monat"><svg aria-hidden="true"><use href="#i-left"/></svg></button>
+                    <p class="cal__title" aria-live="polite"></p>
+                    <button class="cal__nav" type="button" data-cal="1" aria-label="Nächster Monat"><svg aria-hidden="true"><use href="#i-right"/></svg></button>
+                  </div>
+                  <table class="cal__grid" role="grid">
+                    <thead><tr><th scope="col" abbr="Montag">Mo</th><th scope="col" abbr="Dienstag">Di</th><th scope="col" abbr="Mittwoch">Mi</th><th scope="col" abbr="Donnerstag">Do</th><th scope="col" abbr="Freitag">Fr</th><th scope="col" abbr="Samstag">Sa</th><th scope="col" abbr="Sonntag">So</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                  <p class="cal__foot">Burger gibt es am Wochenende und an Feiertagen.</p>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label id="f-n-lbl" for="f-n">Personen</label>
+              <div class="stepper stepper--form" data-min="1" data-max="80">
+                <button class="stepper__btn" type="button" data-step="-1" aria-label="Eine Person weniger"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+                <input class="stepper__input" id="f-n" name="personen" type="text" inputmode="numeric" value="10" autocomplete="off">
+                <button class="stepper__btn" type="button" data-step="1" aria-label="Eine Person mehr"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-paket">Paket</label>
+              <select class="input" id="f-paket" name="paket">
+                <option value="">Bitte wählen</option>
+                <option>Kleines Paket (45 €)</option>
+                <option>Großes Paket (55 €)</option>
+                <option>Eigenausrüster (25 €)</option>
+                <option>Kids: Kleine Farbfabrik (60 €)</option>
+                <option>Kids: Große Farbfabrik (99 €)</option>
+                <option>Weiß ich noch nicht</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-anlass">Anlass</label>
+              <select class="input" id="f-anlass" name="anlass">
+                <option value="">Bitte wählen</option>
+                <option>Freizeit mit Freunden</option>
+                <option>Kindergeburtstag</option>
+                <option>Firmenevent</option>
+                <option>Junggesellenabschied</option>
+                <option>Turnier</option>
+                <option>Vereinssport</option>
+                <option>Urlaub &amp; Ausflug</option>
+                <option>Gutschein</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-msg">Nachricht <span class="field__opt">(optional)</span></label>
+              <textarea class="input" id="f-msg" name="nachricht" rows="4"></textarea>
+            </div>
+
+            <div class="field field--full field--check">
+              <label class="check" for="f-ok">
+                <input class="check__input" id="f-ok" name="datenschutz" type="checkbox" required>
+                <span class="check__box" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+                <span class="check__text">Ich habe die <a href="https://www.paintball-wesenberg.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden.</span>
+              </label>
+              <p class="field__err" id="f-ok-err"></p>
+            </div>
+          </div>
+
+          <button class="btn btn--green btn--lg form__submit" type="submit">Anfrage senden <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </form>
+        <div class="form__done" role="status" aria-live="polite">
+          <div class="form__done-mark"><svg aria-hidden="true"><use href="#splat-4"/></svg><svg class="form__done-check" aria-hidden="true"><use href="#i-check"/></svg></div>
+          <h3>Treffer!</h3>
+          <p class="form__status"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img class="footer__logo" src="assets/img/logo-320.webp" alt="Farbfabrik Wesenberg Paintball" width="320" height="207" loading="lazy">
+      <p>Paintball auf 60.000 m² in Wesenberg, mitten in der Mecklenburgischen Seenplatte.</p>
+      <div class="footer__social">
+        <a class="btn btn--tile" href="https://www.instagram.com/farbfabrikwesenberg.paintball/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-insta"/></svg></a>
+        <a class="btn btn--tile" href="https://www.facebook.com/Farbfabrik-Paintpark-Wesenberg-107599714459157/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer__col" aria-label="Seiten">
+      <p class="footer__title">Park</p>
+      <ul>
+        <li><a href="#park">Der Park</a></li>
+        <li><a href="#anlaesse">Anlässe</a></li>
+        <li><a href="#preise">Preise</a></li>
+        <li><a href="#ablauf">Ablauf</a></li>
+        <li><a href="#fragen">Häufige Fragen</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <p class="footer__title">Kontakt</p>
+      <ul>
+        <li><a href="tel:+4939832269549">039832 269549</a></li>
+        <li><a href="tel:+491739894708">0173 9894708</a></li>
+        <li><a href="mailto:hallo@paintball-wesenberg.de">hallo@paintball-wesenberg.de</a></li>
+        <li>Siedenheide 4, 17255 Wesenberg</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>Inhalte © Farbfabrik GmbH &amp; Co. KG · Designentwurf und Code © 2026 Mykhailo Sibahatov, Nutzung nur mit schriftlicher Vereinbarung</p>
+    <ul>
+      <li><a href="https://www.paintball-wesenberg.de/impressum/" target="_blank" rel="noopener">Impressum</a></li>
+      <li><a href="https://www.paintball-wesenberg.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a></li>
+    </ul>
+  </div>
+</footer>
+
+<p class="draft-tag" aria-label="Designentwurf von Mykhailo Sibahatov, nicht zur Veröffentlichung freigegeben"><span class="draft-tag__dot" aria-hidden="true"></span>Entwurf · © M. Sibahatov</p>
+
+<script src="js/main.js?v=3" defer></script>
+</body>
+</html>
